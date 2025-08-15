@@ -7,7 +7,7 @@
   "scripts": {
     "build": "tsc -b",
     "dev": "ts-node ./src/index.ts",
-    "start": "npx prisma generate && node ./dist/index.js"
+    "start": "npx prisma migrate dev && node ./dist/index.js"
   },
   "keywords": [],
   "author": "",
